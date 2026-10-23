@@ -1,0 +1,164 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+#dashboard {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #1d4ed8;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #60a5fa;
+    border-color: #2563eb;
+}
+
+.card {
+    position: relative;
+    margin: 18px 0;
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 8px 0 0;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+button:focus {
+    outline: 3px solid #93c5fd;
+}
+
+#resetBtn {
+    background: #64748b;
+}
+
+#resetBtn:hover {
+    background: #475569;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.success {
+    color: #15803d;
+    font-weight: bold;
+}
+
+#recommendation {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#summary {
+    margin-top: 15px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.lowest-category {
+    background: #fef3c7;
+    border-color: #f59e0b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #dashboard {
+        padding: 15px;
+        margin: 5px auto;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+
+̥

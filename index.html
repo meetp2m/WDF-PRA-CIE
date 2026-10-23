@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Student Feedback Dashboard</h1>
+    <p>Please share your feedback to improve teaching and learning.</p>
+    </header>
+
+ <main>
+  <section class="card">
+  <h2>Feedback Form</h2>
+
+  <form id="feedbackForm">
+      <div class="form-group">
+      <label for="studentName">Student Name</label>
+      <input type="text" id="studentName"
+               placeholder="Enter student name">
+      <small id="studentError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+      <label for="courseName">Course Name</label>
+      <input type="text" id="courseName"
+              placeholder="Enter course name">
+      <small id="courseError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+      <label for="facultyName">Faculty Name</label>
+      <input type="text" id="facultyName"
+              placeholder="Enter faculty name">
+      <small id="facultyError" class="error"></small>
+      </div>
+
+ <fieldset>
+      <legend>Teaching Rating (1–5)</legend>
+      <label for="teaching">Select rating</label>
+      <select id="teaching">
+      <option value="">Choose rating</option>
+      <option value="1">1 - Poor</option>
+      <option value="2">2 - Needs Improvement</option>
+      <option value="3">3 - Good</option>
+      <option value="4">4 - Very Good</option>
+      <option value="5">5 - Excellent</option>
+</select>
+      <small id="teachingError" class="error"></small>
+</fieldset>
+
+  <fieldset>
+     <legend>Practical / Lab Rating (1 - 5)</legend>
+     <label for="practical">Select rating</label>
+     <select id="practical">
+     <option value="">Choose rating</option>
+     <option value="1">1 - Poor</option>
+     <option value="2">2 - Needs Improvement</option>
+     <option value="3">3 - Good</option>
+     <option value="4">4 - Very Good</option>
+     <option value="5">5 - Excellent</option>
+     </select>
+                    
+ <small id="practicalError" class="error"></small>
+</fieldset>
+
+     <fieldset>
+        <legend>Content Rating (1–5)</legend>
+        <label for="content">Select rating</label>
+        <select id="content">
+        <option value="">Choose rating</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Needs Improvement</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+</select>
+    <small id="contentError" class="error"></small>
+      </fieldset>
+
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="4"
+                 placeholder="Write your feedback"></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+        <button type="button" id="resetBtn" class="reset">
+             Reset Feedback
+        </button>
+        </form>
+        </section>
+
+        <section class="card" id="feedbackSummary">
+            <h2>Feedback Summary</h2>
+            <p id="summaryText">Submit feedback to view results.</p>
+            <div id="ratingDetails"></div>
+            <p id="classification"></p>
+            <p id="recommendation"></p>
+            <p id="improvement"></p>
+            <p id="suggestion"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>ITUE203-Web Development Frameworks|Practical CIE</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+̥
